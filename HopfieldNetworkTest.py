@@ -3,13 +3,6 @@ from HopfieldNetwork import HopfieldNetwork
 import json
 
 
-def printLetter(pattern):
-    for i in range(5):
-        s = ""
-        for j in range(5):
-            val = pattern[i * 5 + j]
-            s += "# " if val == 1 else ". "
-        print(s)
 
 
 def randomizePatterns(to_randomize, randomProb):
@@ -45,20 +38,19 @@ def getPatternsFromFile(file):
 with open('./data/config.json') as json_file:
     data = json.load(json_file)
     for p in data['ej2']:
-        print('Patterns file: '+ p['patterns_file'])
+        print('Patterns file: ' + p['patterns_file'])
         print('Random Probability: ' + p['random_prob'])
         print('Epsilon: ' + p['epsilon'])
         print('Maximum epochs: ' + p['max_epochs'])
         print('')
+
 patterns_file_name = p['patterns_file']
 randomProbability = float(p['random_prob'])
 epsilon = float(p['epsilon'])
 max_epochs = int(p['max_epochs'])
-patterns_file = open("data/"+patterns_file_name, "r+")
+patterns_file = open("data/" + patterns_file_name, "r+")
 
 patterns = getPatternsFromFile(patterns_file)
-
-
 
 random_patterns = randomizePatterns(patterns, randomProbability)
 hpn = HopfieldNetwork(patterns)
