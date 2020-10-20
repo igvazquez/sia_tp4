@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="176eb28a-8ba7-4224-bf8b-b0527a6ca2f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HopfieldNetwork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HopfieldNetworkTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/patterns1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/patterns2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OjasRuleNeuron.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OjasRuleTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +49,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.HopfieldNetworkTest">
+  <component name="RunManager" selected="Python.OjasRuleTest">
     <configuration name="HopfieldNetworkTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,6 +63,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HopfieldNetworkTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="OjasRuleTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\matim\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OjasRuleTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,6 +136,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.OjasRuleTest" />
         <item itemvalue="Python.HopfieldNetworkTest" />
         <item itemvalue="Python.SOM" />
         <item itemvalue="Python.ejPCA" />
@@ -154,22 +175,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1120" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603148713679" />
-    <state width="936" height="279" key="GridCell.Tab.0.bottom" timestamp="1603195781654">
+    <state width="942" height="383" key="GridCell.Tab.0.bottom" timestamp="1603200134050">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603195781654" />
-    <state width="936" height="279" key="GridCell.Tab.0.center" timestamp="1603195781654">
+    <state width="942" height="383" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603200134050" />
+    <state width="942" height="383" key="GridCell.Tab.0.center" timestamp="1603200134050">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603195781654" />
-    <state width="936" height="279" key="GridCell.Tab.0.left" timestamp="1603195781654">
+    <state width="942" height="383" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603200134050" />
+    <state width="942" height="383" key="GridCell.Tab.0.left" timestamp="1603200134050">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603195781654" />
-    <state width="936" height="279" key="GridCell.Tab.0.right" timestamp="1603195781654">
+    <state width="942" height="383" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603200134050" />
+    <state width="942" height="383" key="GridCell.Tab.0.right" timestamp="1603200134050">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603195781654" />
+    <state width="942" height="383" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603200134050" />
     <state width="483" height="233" key="GridCell.Tab.1.bottom" timestamp="1602173369645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
