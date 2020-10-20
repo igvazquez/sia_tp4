@@ -1,0 +1,10 @@
+{
+  "ej2": [
+    {
+      "random_prob": "0.2",
+      "epsilon": "0.0001",
+      "max_epochs": "50",
+      "patterns_file": "patterns1.txt"
+    }
+  ]
+}
