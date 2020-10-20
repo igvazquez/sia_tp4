@@ -11,10 +11,12 @@ def asymptotic_decay(learning_rate, t, max_iter):
 
 class SOM(object):
 
-    def __init__(self, x, y, input_len, learning_rate=0.5,
+    def __init__(self, x, y, input_len, initial_radius, learning_rate=0.5, sigma=1.0,
                  update_function=asymptotic_decay):
 
+        self.radius = initial_radius
         self._learning_rate = learning_rate
+        self._sigma = sigma
         self._input_len = input_len
 
         self._weights = np.random.rand(x, y, input_len) * 2 - 1
@@ -32,10 +34,6 @@ class SOM(object):
     def _activate(self, x):
         self._activation_map = self._distance_function(x, self._weights)
 
-    def activate(self, x):
-        self._activate(x)
-        return self._activation_map
-
     def _distance_function(self, x, w):
         return np.linalg.norm(np.subtract(x, w), axis=-1)
 
@@ -43,9 +41,21 @@ class SOM(object):
         self._activate(x)
         return np.unravel_index(self._activation_map.argmin(), self._activation_map.shape)
 
+    def neighborhood(self, c, sigma):
+        """Campana gaussiana centrada en c."""
+        d = 2*np.pi*sigma*sigma
+        ax = np.exp(-np.power(self._xx-self._xx.T[c], 2)/d)
+        ay = np.exp(-np.power(self._yy-self._yy.T[c], 2)/d)
+        return (ax * ay).T
+
     def update(self, x, w, t, max_iteration):
         eta = self._update_function(self._learning_rate, t, max_iteration)
-        self._weights[w[0]][w[1]] += eta * (x - self._weights[w[0]][w[1]])  # w_new = w_old + eta(t) * (x-w)
+        sigma = self._update_function(self._sigma, t, max_iteration)
+        h = self.neighborhood(w, sigma)
+        self._weights += np.einsum('ij, ijk->ijk', eta*h, x-self._weights)
+        # ij, ijk son los labels de las dos matrices eta*h es 2D y x-W es 3D
+
+
 
     def train(self, training_data, max_iterations):
 
@@ -85,12 +95,11 @@ class SOM(object):
 df = pd.read_csv('europe.csv')
 X_cols = ['Area', 'GDP', 'Inflation', 'Life.expect', 'Military', 'Pop.growth', 'Unemployment']
 # print(data[X_cols].to_numpy())
-som = SOM(6, 6, 7)
+som = SOM(6, 6, 7, 3)
 # inp = np.array([0.2, 0.2])
 data = df[X_cols]
 data = (data - np.mean(data, axis=0)) / np.std(data, axis=0)
 data = data.values
-print(df['Country'])
 
 som.train(data, 1000)
 winner_coordinates = np.array([som.winner_neuron(x) for x in data]).T
@@ -141,11 +150,9 @@ plt.figure(figsize=(14, 14))
 for p, countries in country_map.items():
     countries = list(countries)
     x = p[0] + .1
-    y = p[1] - .3
+    y = p[1] - .1
     for i, c in enumerate(countries):
         off_set = (i + 1) / len(countries) - 0.1
-        print("offset")
-        print(off_set)
         plt.text(x, y + off_set, c, fontsize=20)
 plt.pcolor(som.distance_map().T, cmap='gray_r', alpha=.2)
 plt.xticks(np.arange(6 + 1))
