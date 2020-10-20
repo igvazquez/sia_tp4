@@ -1,4 +1,6 @@
 from OjasRuleNeuron import OjasRuleNeuron
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
 import numpy as np
 import pandas as pd
 import json
@@ -15,10 +17,12 @@ max_epochs = int(p['max_epochs'])
 df = pd.read_csv('europe.csv')
 X_cols = ['Area', 'GDP', 'Inflation', 'Life.expect', 'Military', 'Pop.growth', 'Unemployment']
 
-data = df[X_cols]
-data = (data - np.mean(data, axis=0)) / np.std(data, axis=0)
-data = data.values
+
+std_df = StandardScaler().fit_transform(df[X_cols])
 
 ORN = OjasRuleNeuron()
-FPC,history = ORN.fit(learn_factor,data,max_epochs)
+FPC,history = ORN.fit(learn_factor,std_df,max_epochs)
 
+pca = PCA(n_components=7)
+components = pca.fit_transform(std_df)
+print('Library first principal component:\n',pca.components_[0])

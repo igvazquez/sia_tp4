@@ -19,7 +19,6 @@ class OjasRuleNeuron:
 
         self.weights = np.random.random_sample(n_features) * 2 - 1
         self.epochs = 0
-
         self.weights_history = [self.weights]
         print("Calculating...")
         print("⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0%")
@@ -44,5 +43,5 @@ class OjasRuleNeuron:
 
         print("⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ 100%\n")
         print("Epochs: ", self.epochs)
-        print("First PC: ", self.weights)
+        print("Oja's Rule first principal component:\n", self.weights)
         return self.weights, self.epochs
