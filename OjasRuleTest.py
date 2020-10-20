@@ -26,9 +26,13 @@ ORN = OjasRuleNeuron()
 FPC,history = ORN.fit(learn_factor,std_df,max_epochs)
 
 pca = PCA(n_components=7)
-lib_components = pca.fit_transform(std_df)
-print('Library first principal component:\n',pca.components_[0])
+lib_components = pca.fit_transform(std_df)[:,0]
 data_components = std_df.dot(FPC)
+if lib_components[0]*data_components[0] < 0:
+    data_components = data_components*-1
+print("Oja's Rule first principal component:\n", FPC)
+print('Library first principal component:\n',pca.components_[0])
+
 df_2 = pd.DataFrame({'Pais': df['Country'], 'PCA1': data_components})
 plt.figure(figsize=(7, 5))
 plt.xticks(rotation=90)
@@ -37,7 +41,7 @@ sorted = df_2.sort_values(by='PCA1', ascending=True)
 sns.barplot(x='Pais', y='PCA1', data=sorted)
 
 
-df_3 = pd.DataFrame({'Pais': df['Country'], 'PCA1': lib_components[:,0]})
+df_3 = pd.DataFrame({'Pais': df['Country'], 'PCA1': lib_components})
 plt.figure(figsize=(7, 5))
 plt.xticks(rotation=90)
 plt.title("Using Library's First Principal Component")

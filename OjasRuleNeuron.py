@@ -43,5 +43,5 @@ class OjasRuleNeuron:
 
         print("⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ 100%\n")
         print("Epochs: ", self.epochs)
-        print("Oja's Rule first principal component:\n", self.weights)
+
         return self.weights, self.epochs
