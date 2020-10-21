@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="176eb28a-8ba7-4224-bf8b-b0527a6ca2f3" name="Default Changelist" comment="">
+    <list default="true" id="3ecc688e-84a9-4cca-b4b8-1aac9e1c285f" name="Default Changelist" comment="arregle kohonen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OjasRuleNeuron.py" beforeDir="false" afterPath="$PROJECT_DIR$/OjasRuleNeuron.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HopfieldNetworkTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/HopfieldNetworkTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OjasRuleTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/OjasRuleTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,33 +20,49 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ifTe7heFgXqPY340pECeCuLYLl" />
+  <component name="JupyterTrust" id="6c406886-7704-4d96-9cc4-a64262e63ec6" />
+  <component name="ProjectId" id="1j6QF9UHRCrLYLxorBdfgwgmbJ9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.OjasRuleTest">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ignacio Vazquez\PycharmProjects\sia_tp4" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.HopfieldNetworkTest">
     <configuration name="HopfieldNetworkTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sia_tp4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\matim\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HopfieldNetworkTest.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -71,20 +70,18 @@
       <method v="2" />
     </configuration>
     <configuration name="OjasRuleTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sia_tp4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\matim\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OjasRuleTest.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -92,27 +89,25 @@
       <method v="2" />
     </configuration>
     <configuration name="SOM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sia_tp4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\matim\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SOM.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ejPCA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="sia_tp4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,13 +115,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sia_tp4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ejPCA.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -135,76 +150,139 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.OjasRuleTest" />
         <item itemvalue="Python.HopfieldNetworkTest" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.OjasRuleTest" />
         <item itemvalue="Python.SOM" />
-        <item itemvalue="Python.ejPCA" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="176eb28a-8ba7-4224-bf8b-b0527a6ca2f3" name="Default Changelist" comment="" />
-      <created>1602297739643</created>
+      <changelist id="3ecc688e-84a9-4cca-b4b8-1aac9e1c285f" name="Default Changelist" comment="" />
+      <created>1603121954760</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1602297739643</updated>
+      <updated>1603121954760</updated>
+      <workItem from="1603121955812" duration="14597000" />
+      <workItem from="1603198184423" duration="10749000" />
     </task>
+    <task id="LOCAL-00001" summary="kohonen y algunos graficos">
+      <created>1603143845740</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603143845740</updated>
+    </task>
+    <task id="LOCAL-00002" summary="arregle kohonen">
+      <created>1603223272021</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603223272021</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="kohonen y algunos graficos" />
+    <MESSAGE value="arregle kohonen" />
+    <option name="LAST_COMMIT_MESSAGE" value="arregle kohonen" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="731" y="230" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602168387406">
+    <state x="1036" y="294" width="532" height="620" key="#xdebugger.evaluate" timestamp="1603307543760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="731" y="230" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602168387406" />
-    <state x="1120" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603148713679">
+    <state x="1036" y="294" width="532" height="620" key="#xdebugger.evaluate/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603307543760" />
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1603255655264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1120" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603148713679" />
-    <state width="885" height="298" key="GridCell.Tab.0.bottom" timestamp="1603203888424">
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603255655264" />
+    <state width="1515" height="466" key="DebuggerActiveHint" timestamp="1603133578863">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="885" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603203888424" />
-    <state width="885" height="298" key="GridCell.Tab.0.center" timestamp="1603203888423">
+    <state width="1515" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603133578863" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1603307549869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="885" height="298" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603203888423" />
-    <state width="885" height="298" key="GridCell.Tab.0.left" timestamp="1603203888423">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603307549869" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1603307549869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="885" height="298" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603203888423" />
-    <state width="885" height="298" key="GridCell.Tab.0.right" timestamp="1603203888423">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603307549869" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1603307549869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="885" height="298" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603203888423" />
-    <state width="483" height="233" key="GridCell.Tab.1.bottom" timestamp="1602173369645">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603307549869" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1603307549869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="483" height="233" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602173369645" />
-    <state width="483" height="233" key="GridCell.Tab.1.center" timestamp="1602173369644">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603307549869" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1603307549869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="483" height="233" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602173369644" />
-    <state width="483" height="233" key="GridCell.Tab.1.left" timestamp="1602173369644">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603307549869" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1603307549869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="483" height="233" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602173369644" />
-    <state width="483" height="233" key="GridCell.Tab.1.right" timestamp="1602173369645">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603307549869" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1603307549869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="483" height="233" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602173369645" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603307549869" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1603307549869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603307549869" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1603138720334">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603138720334" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603143865548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603143865548" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603122047158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1603122047158" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SOM.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/HopfieldNetwork.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/HopfieldNetworkTest.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/HopfieldNetworkTest.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sia_tp4$SOM.coverage" NAME="SOM Coverage Results" MODIFIED="1603254355358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sia_tp4$test.coverage" NAME="test Coverage Results" MODIFIED="1603221703444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sia_tp4$HopfieldNetworkTest.coverage" NAME="HopfieldNetworkTest Coverage Results" MODIFIED="1603307523791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
