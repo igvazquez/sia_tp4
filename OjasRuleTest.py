@@ -40,7 +40,7 @@ plt.xticks(rotation=90)
 plt.title("Using Oja's Rule First Principal Component")
 sorted = df_2.sort_values(by='PCA1', ascending=True)
 sns.barplot(x='Pais', y='PCA1', data=sorted)
-
+plt.show()
 
 df_3 = pd.DataFrame({'Pais': df['Country'], 'PCA1': lib_components})
 plt.figure(figsize=(7, 5))
