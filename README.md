@@ -1,6 +1,6 @@
 # sia_tp4
 TP4 - Sistemas de Inteligencia Artificial ITBA 2020
-Ejecución:
+- Ejecución:
 
 Colocarse en el directorio donde se encuentre el archivo requirements.txt dentro de una terminal e ingresar el comando 'pip install -r requirement.txt' para instalar las dependencias necesarias. Luego para ejecutar un script ingresar el comando 'py archivo.py', siendo "archivo" el nombre del script de Python Siendo nuestros archivos ejecutables: HopfieldNetworkTest.py, OjasRuleTest.py y SOM.py
 
@@ -15,7 +15,7 @@ Dentro de la carpeta data se encuentra el archívo config.json donde se ingresan
   - max_epochs: Máximo de épocas
   - pattern_file: nombre del archivo de texto que contiene los patrones de entrenamiento/prueba.
   
-Ejemplo de configuración de ejecución:
+- Ejemplo de configuración de ejecución:
 
 {
   "ej1b": [
