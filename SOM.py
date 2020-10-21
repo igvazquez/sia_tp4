@@ -113,7 +113,7 @@ for p, countries in country_map.items():
     for i, c in enumerate(countries):
         off_set = (i + 1) / len(countries) - 0.1
         plt.text(x, y + off_set, c, fontsize=20)
-plt.pcolor(som.distance_map().T, cmap='gray_r', alpha=.2)
+plt.pcolor(som.distance_map().T, cmap='gray_r', alpha=.5)
 plt.xticks(np.arange(6 + 1))
 plt.yticks(np.arange(6 + 1))
 plt.grid()
