@@ -9,6 +9,7 @@ class HopfieldNetwork:
         self.N = len(patterns[0])
         self.weights = (np.dot(patterns.T, patterns) - (len(patterns) * np.identity(self.N))) / self.N
 
+
     def get_output(self, S, epsilon):
         h = np.dot(self.weights, S)
         # print("h:", h)
@@ -26,11 +27,15 @@ class HopfieldNetwork:
             print("Epoch ", epoch, ": ")
 
             old_S = input_patterns[i]
+            print("H = ", self.calculateEnergy(old_S))
+            print("\n")
             printLetter(old_S)
             print("\n")
             epoch += 1
             print("Epoch ", epoch, ": ")
             new_S = self.get_output(old_S, epsilon)
+            print("H = ",self.calculateEnergy(new_S))
+            print("\n")
             printLetter(new_S)
             print("\n")
 
@@ -40,11 +45,21 @@ class HopfieldNetwork:
                 epoch += 1
                 print("Epoch ", epoch, ": ")
                 new_S = self.get_output(old_S, epsilon)
+                print("H = ", self.calculateEnergy(new_S))
+                print("\n")
                 printLetter(new_S)
                 print("\n")
             print("------------------------------------------------\n")
             outputs = np.append(outputs, new_S)
         return outputs
+
+    def calculateEnergy(self, S):
+        H = 0
+        for i in range(self.N):
+
+            for j in range(i + 1, self.N):
+                H = H + self.weights[i][j] * S[i] * S[j]
+        return -H
 
 
 def printLetter(pattern):
