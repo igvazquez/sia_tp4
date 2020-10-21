@@ -75,14 +75,13 @@ class SOM(object):
     def distance_map(self):
         u = np.zeros((self.weights.shape[0], self.weights.shape[1], 8))
 
-        ii = [[0, -1, -1, -1, 0, 1, 1, 1]] * 2
-        jj = [[-1, -1, 0, 1, 1, 1, 0, -1]] * 2
+        ii = [0, -1, 0, 1]
+        jj = [-1, 0, 1, 0]
 
         for x in range(self.weights.shape[0]):
             for y in range(self.weights.shape[1]):
                 w_2 = self.weights[x, y]
-                e = y % 2 == 0  # only used on hexagonal topology
-                for k, (i, j) in enumerate(zip(ii[e], jj[e])):
+                for k, (i, j) in enumerate(zip(ii, jj)):
                     if x + i >= 0 and x + i < self.weights.shape[0] and y + j >= 0 and y + j < self.weights.shape[1]:
                         w_1 = self.weights[x + i, y + j]
                         u[x, y, k] = np.linalg.norm(w_2 - w_1)
@@ -112,7 +111,7 @@ for p, countries in country_map.items():
     y = p[1] - .1
     for i, c in enumerate(countries):
         off_set = (i + 1) / len(countries) - 0.1
-        plt.text(x, y + off_set, c, fontsize=20)
+        plt.text(x, y + off_set, c, fontsize=18)
 plt.pcolor(som.distance_map().T, cmap='gray_r', alpha=.5)
 plt.xticks(np.arange(6 + 1))
 plt.yticks(np.arange(6 + 1))

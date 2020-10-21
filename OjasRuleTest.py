@@ -21,6 +21,7 @@ X_cols = ['Area', 'GDP', 'Inflation', 'Life.expect', 'Military', 'Pop.growth', '
 
 
 std_df = StandardScaler().fit_transform(df[X_cols])
+print(std_df)
 
 ORN = OjasRuleNeuron()
 FPC,history = ORN.fit(learn_factor,std_df,max_epochs)
