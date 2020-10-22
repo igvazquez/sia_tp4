@@ -31,9 +31,10 @@ class OjasRuleNeuron:
                 # print("delta w",delta_w)
                 self.weights += delta_w
                 # print("weights: ",self.weights)
-                self.weights_history = np.concatenate((self.weights_history, [self.weights]))
+                self.weights_history = np.concatenate((self.weights_history,[self.weights]))
             # self.errors_history = np.append(self.errors_history, [error])
             self.epochs += 1
+
             if i == int(limit / 4):
                 print("⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜ 25%")
             elif i == int(limit / 2):
@@ -42,6 +43,6 @@ class OjasRuleNeuron:
                 print("⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜ 75%")
 
         print("⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ 100%\n")
-        print("Epochs: ", self.epochs)
 
-        return self.weights, self.epochs
+
+        return self.weights, self.epochs,self.weights_history

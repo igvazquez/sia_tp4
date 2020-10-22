@@ -24,10 +24,11 @@ std_df = StandardScaler().fit_transform(df[X_cols])
 print(std_df)
 
 ORN = OjasRuleNeuron()
-FPC,history = ORN.fit(learn_factor,std_df,max_epochs)
-
+FPC,epochs,history = ORN.fit(learn_factor,std_df,max_epochs)
+print("Epochs: ",epochs)
 pca = PCA(n_components=7)
 lib_components = pca.fit_transform(std_df)[:,0]
+
 data_components = std_df.dot(FPC)
 if lib_components[0]*data_components[0] < 0:
     data_components = data_components*-1
@@ -48,5 +49,9 @@ plt.xticks(rotation=90)
 plt.title("Using Library's First Principal Component")
 sorted = df_3.sort_values(by='PCA1', ascending=True)
 sns.barplot(x='Pais', y='PCA1', data=sorted)
-
 plt.show()
+
+
+
+
+
